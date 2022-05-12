@@ -1,0 +1,9 @@
+mutation AdminLogin($phoneNumberOrEmail: String!, $password: String!) {
+  adminLogin(input: { phoneNumberOrEmail: $phoneNumberOrEmail , password: $password }) {
+    id
+    email
+    username
+    token
+    role
+  }
+}

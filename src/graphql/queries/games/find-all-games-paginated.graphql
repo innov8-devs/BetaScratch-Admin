@@ -1,0 +1,5 @@
+query FindAllGamesPaginated($skip: Float, $take: Float) {
+  findAllGamesPaginated(pagination: { skip: $skip, take: $take }) {
+    ...Game
+  }
+}

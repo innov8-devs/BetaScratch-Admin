@@ -1,0 +1,7 @@
+query FindAllGameCategories {
+  findAllGameCategories {
+    id
+    categoryName
+    categoryLabel
+  }
+}

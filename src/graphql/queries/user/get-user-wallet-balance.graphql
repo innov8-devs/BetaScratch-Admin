@@ -1,0 +1,7 @@
+query GetUserBalance {
+  getUserBalance {
+    withdrawable
+    bonus
+    currency
+  }
+}

@@ -1,0 +1,15 @@
+fragment User on User {
+  id
+  email
+  username
+  firstName
+  lastName
+  dateOfBirth
+  role
+  gender
+  mobileNumber
+  country
+  state
+  confirmed
+  createdAt
+}

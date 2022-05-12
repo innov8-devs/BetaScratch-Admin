@@ -1,0 +1,13 @@
+query GetAllWithdrawalRequests($skip: Float, $take: Float) {
+  getAllWithdrawalRequests(pagination: { skip: $skip, take: $take }) {
+    id
+    userId
+    bank
+    accountNumber
+    accountName
+    amount
+    status
+    paypal
+    btcWalletAdderess
+  }
+}

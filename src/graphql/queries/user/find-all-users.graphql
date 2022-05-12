@@ -1,0 +1,21 @@
+query FindAllUsers($skip: Float, $take: Float) {
+  findAllUsers(pagination: { skip: $skip, take: $take }) {
+    id
+    email
+    username
+    firstName
+    lastName
+    dateOfBirth
+    role
+    gender
+    mobileNumber
+    state
+    confirmed
+    createdAt
+    wallet {
+      withdrawable
+      currency
+      bonus
+    }
+  }
+}

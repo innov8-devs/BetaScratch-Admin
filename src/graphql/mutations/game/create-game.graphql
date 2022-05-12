@@ -1,0 +1,23 @@
+mutation CreateGame(
+  $name: String!
+  $imageUrl: String!
+  $description: String!
+  $category: String!
+  $gameId: String!
+  $price: JSON!
+  $availability: Int!
+) {
+  createGame(
+    input: {
+      name: $name
+      imageUrl: $imageUrl
+      description: $description
+      category: $category
+      gameId: $gameId
+      price: $price
+      availability: $availability
+    }
+  ) {
+    ...Game
+  }
+}

@@ -1,0 +1,15 @@
+mutation DeductUserBalance(
+  $amount: String!
+  $wallet: String!
+  $currency: String!
+  $userId: Float!
+) {
+  deductUserBalance(
+    input: {
+      amount: $amount
+      wallet: $wallet
+      currency: $currency
+      userId: $userId
+    }
+  )
+}

@@ -1,0 +1,12 @@
+fragment Game on Game {
+  id
+  name
+  imageUrl
+  description
+  gameId
+  price
+  category
+  availability
+  createdAt
+  updatedAt
+}

@@ -1,0 +1,3 @@
+mutation ToggleUserConfirmationFromAdmin($userId: Float!) {
+  toggleUserConfirmationFromAdmin(userId: $userId)
+}

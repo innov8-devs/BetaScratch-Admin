@@ -1,0 +1,21 @@
+mutation EditGame(
+  $gameId: Float!
+  $name: String
+  $imageUrl: String
+  $description: String
+  $price: JSON
+  $category: String
+  $availability: Float
+) {
+  editGame(
+    gameId: $gameId
+    input: {
+      name: $name
+      imageUrl: $imageUrl
+      description: $description
+      price: $price
+      category: $category
+      availability: $availability
+    }
+  )
+}
